@@ -19,24 +19,26 @@
 			.wrapper {
 				width: 1240px;
 				margin: 15px auto 15px auto;
-				border: 2px solid #000000;
+				border: 1.5px solid #000000;
 				background-color: #ffffff;}
 			header {
+				margin-bottom: 10px;
 				height: 160px;
 				background-image: url("/ruby_projects/alpha-blog/app/assets/images/bkgrnd.png");}
 			h1 {
 				width: 940px;
 				height: 130px;
-				margin-top: 10px;
+				margin-top: 0px;
 				text-align: center;
 			}
 			nav, footer {
+				margin-top: 0px;
 				clear: both;
 				color: #ffffff;
 				background-color: #aeaca8;
 				height: 30px;}
 			nav ul {
-				margin: 0x;
+				margin-top: 5px;
 				padding: 5px 0px 5px 30px;}
 			nav li {
 				display: inline;
@@ -47,19 +49,29 @@
 				color: #000000;}
 			section.courses {
 				float: left;
-				margin: 10px;
+				margin-top: 25px;
 				width: 950px;
 				border-right: 1px solid #eeeeee;}
 			article {
+				margin-top:20px;
 				clear: both;
 				overflow: auto;
 				width: 100%;}
 			hgroup {
 				margin-top: 40px;}
 			figure {
+				margin-top:20px;
 				float: left;
 				width: 290px;
 				height: 180px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eeeeee;}
+			figure-header {
+				margin-top:20px;
+				float: left;
+				width: 1180px;
+				height: 200px;
 				padding: 5px;
 				margin: 20px;
 				border: 1px solid #eeeeee;}
@@ -103,7 +115,11 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<h1>Alpha Blog - About Page</h1>
+				<figure-header>
+				<%= image_tag 'blog-header.jpg', :size => "380x190"%>
+				</figure-header>
+				<!--%= image_tag 'iecelogo.JPG', :size => "380x180"% -->
+				<!--%= image_tag 'blog-header.jpg', :size => "380x190"% -->
 				
 				<nav>
 					<ul>
@@ -127,17 +143,7 @@
 					</hgroup>
 					<p>This will be where you describe the topic at hand.</p>
 				</article>    
-				<article>
-					<figure>
-						<%= image_tag 'iecelogo.JPG', :size => "290x150"%>
-						<figcaption>Events</figcaption>
-					</figure>
-					<hgroup>
-						<h2>Third article/video etc</h2>
-						<h3>Maybe some kind of workshops</h3>
-					</hgroup>
-					<p>We can even teach to play an instrument or do something like that</p>
-				</article>  
+
 			</section>
 			<aside>
 				<section class="Popular Essays">
